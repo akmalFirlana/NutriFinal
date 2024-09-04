@@ -17,7 +17,7 @@
         <input type="checkbox" id="flip">
         <div class="cover">
             <div class="front">
-                <img src="{{ asset('images/login.png') }}" alt="Logo"
+                <img src="{{ asset('image/login.png') }}" alt="Logo"
                     style="border-radius: 20px; box-shadow: -5px 0px 5px rgba(31, 38, 135, 0.37), 5px 0px 5px rgba(31, 38, 135, 0.20);">
             </div>
         </div>

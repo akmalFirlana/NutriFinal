@@ -7,7 +7,6 @@
     <title>Landingpage</title>
     @vite('resources/js/app.js')
     @vite('resources/css/app.css')
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
     <link rel="stylesheet" href="{{ asset('css/homepage.css') }}">
 </head>
 
@@ -59,7 +58,6 @@
                     <a href="login.html" class="icon">
                         <i class="bx bx-user"></i>
                     </a>
-
                 </div>
 
                 <div class="hamburger">
@@ -72,8 +70,9 @@
         <h1 class="header-text col-md-6 fw-bold"
             style="font-size: 4.8rem;  padding: 7rem 7rem 0 7rem;">Pilihan Tepat untuk Camilan
             Sehat dan Alami</h1>
-        <p class="col-md-6" style="padding: 0.8rem 7rem 7rem 7rem; font-size: 1.5rem;">Browse through our diverse range of meticulously crafted garments, designed to bring out your individuality
+        <p class="col-md-6 text-gray-400" style="padding: 0.8rem 7rem 2rem 7rem; font-size: 1.5rem;">Browse through our diverse range of meticulously crafted garments, designed to bring out your individuality
             and cater to your sense of style.</p>
+        <button class="btn col-md-6" style="margin-left: 7rem;">Jelajahi</button>
     </section>
 </body>
 

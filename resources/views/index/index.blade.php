@@ -68,18 +68,11 @@
     </div>
     <hr class="hr" style="margin-top: 22px;">
 
-    <div class="dropdown">
-        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-            aria-expanded="false">
-            Dropdown link
-        </a>
 
-        <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-        </ul>
-    </div>
+    <section>
+        include
+    </section>
+
 
     <footer class="text-center text-lg-start pt-5 pb-5" style="background-color: #f0f0f0">
         <div class="container p-4 pb-0">
@@ -213,6 +206,9 @@
             NutriBites © 2024, All Rights Reserved
         </div>
     </footer>
+    <?<?php
+    
+    ?>
 </body>
 
 </html>

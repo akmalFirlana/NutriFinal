@@ -7,7 +7,9 @@
     <title>Landingpage</title>
     @vite('resources/js/app.js')
     @vite('resources/css/app.css')
-    <link rel="stylesheet" href="{{ asset('css/upload.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/penjual.css') }}">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link rel="stylesheet" href="{{ asset('css/main.css') }}" >
 </head>
 
 <body>
@@ -20,8 +22,8 @@
             <a href="#" class="header__logo fw-bold pe-5">Nutri<span style="color: #BAB41E">Bit</span>es</a>
 
             <div class="header__search">
-                <input type="search" placeholder="Search" class="header__input">
-                <i class='bx bx-search header__icon'></i>
+                <input type="search" placeholder="Cari Halaman" class="header__input">
+                <i class='bx bx-search header__icon mt-1'></i>
             </div>
 
             <div class="header__toggle">
@@ -34,7 +36,7 @@
     <div class="nav" id="navbar">
         <nav class="nav__container">
             <div>
-                <a href="#" class="nav__link nav__logo">
+                <a href="{{ route('dashboard') }}" class="nav__link nav__logo">
                     <i class='bx bx-menu nav__icon'></i>
                     <span class="nav__logo-name">Nutri<span style="color: #BAB41E">Bit</span>es</span>
                 </a>
@@ -42,7 +44,7 @@
                 <div class="nav__list">
                     <div class="nav__items">
 
-                        <a href="#" class="nav__link active">
+                        <a href="{{ route('dashboard') }}" class="nav__link">
                             <i class='bx bxs-dashboard nav__icon'></i>
                             <span class="nav__name">Dashboard</span>
                         </a>
@@ -56,16 +58,16 @@
 
                             <div class="nav__dropdown-collapse">
                                 <div class="nav__dropdown-content">
-                                    <a href="#" class="nav__dropdown-item">Passwords</a>
-                                    <a href="#" class="nav__dropdown-item">Mail</a>
-                                    <a href="#" class="nav__dropdown-item">Accounts</a>
+                                    <a href="{{ route('PPass') }}" class="nav__dropdown-item">Keamanan</a>
+                                    <a href="{{ route('PPesan') }}" class="nav__dropdown-item">Pesan</a>
+                                    <a href="{{ route('profil') }}" class="nav__dropdown-item">Akun</a>
                                 </div>
                             </div>
                         </div>
 
-                        <a href="#" class="nav__link">
-                            <i class='bx bx-message-rounded nav__icon'></i>
-                            <span class="nav__name">Pesan</span>
+                        <a href="{{ route('pesanan') }}" class="nav__link">
+                            <i class='bx bx-cart nav__icon'></i>
+                            <span class="nav__name">Pesanan</span>
                         </a>
                     </div>
 
@@ -81,18 +83,18 @@
 
                             <div class="nav__dropdown-collapse">
                                 <div class="nav__dropdown-content">
-                                    <a href="#" class="nav__dropdown-item">Produk kamu</a>
-                                    <a href="#" class="nav__dropdown-item">Tambah Produk</a>
-                                    <a href="#" class="nav__dropdown-item">Metode Pengiriman</a>
+                                    <a href="{{ route('produk.kelola') }}" class="nav__dropdown-item">Produk kamu</a>
+                                    <a href="{{ route('produk.upload') }}" class="nav__dropdown-item">Tambah- Produk</a>
                                 </div>
                             </div>
 
                         </div>
 
-                        <a href="#" class="nav__link">
-                            <i class='bx bx-line-chart nav__icon'></i>
-                            <span class="nav__name">Penjualan</span>
+                        <a href="{{ route('penjualan') }}" class="nav__link">
+                        <i class='bx bxs-truck nav__icon'></i>
+                            <span class="nav__name">Pengiriman</span>
                         </a>
+
                         <a href="#" class="nav__link">
                             <i class='bx bx-cog nav__icon'></i>
                             <span class="nav__name">Setelan</span>
@@ -107,16 +109,16 @@
             </a>
         </nav>
     </div>
+    
 
     <!--========== CONTENTS ==========-->
-    <main>
-        <section>
-            <h1 class="fw-bold fs-3 mt-2">Dashboard</h1>
-        </section>
-    </main>
+    <div>
+        @yield('content')
+    </div>
+
 
     <!--========== MAIN JS ==========-->
     <script src="{{ asset('js/nav.js') }}"></script>
+    <script src="https://cdn.canvasjs.com/canvasjs.min.js"></script>
 </body>
-
 </html>

@@ -64,6 +64,10 @@ img {
   height: auto;
 }
 
+section {
+  padding: 3.5rem 0 1rem;
+}
+
 /*========== HEADER ==========*/
 .header {
   position: fixed;
@@ -331,9 +335,24 @@ img {
 
 .container {
   background-color: #ffffff;
-  height: 90%;
-  border-radius: 20px;
+  height: max-content;
+  border-radius: 15px;
 }
+
+.second-container {
+  background-color: #ffffff;
+  height: max-content;
+  border-radius: 15px;
+}
+
+.vertical-align-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh; /* Sesuaikan tinggi */
+}
+
+
 /*============================image============================= */
 /*============================image============================= */
 /*============================image============================= */
@@ -428,4 +447,289 @@ img {
 }
 .container-btn-file:hover::before {
   width: 100%;
+}
+
+/*============================Penjualan============================= */
+
+.status-badge {
+  border-radius: 50px;
+  padding: 5px 15px;
+  font-size: 0.9rem;
+  color: white;
+}
+.status-delivered {
+  background-color: #00C292;
+}
+.status-pending {
+  background-color: #FEC107;
+}
+.status-rejected {
+  background-color: #E46A76;
+}
+.product-img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/*============================Profil============================= */
+
+.profile-header {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #6c757d;
+}
+
+.contact-info {
+  margin-top: 20px;
+}
+.contact-info input {
+  border: none;
+  background-color: #f8f9fa;
+  border-bottom: 2px solid #dee2e6;
+  width: 100%;
+  transition: border-bottom-color 0.3s;
+}
+.contact-info input:focus {
+  outline: none;
+  border-bottom-color: #0d6efd;
+}
+.info-title {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+.edit-icon {
+  cursor: pointer;
+}
+.form-group {
+  position: relative;
+  margin-bottom: 20px;
+}
+.form-group .edit-icon {
+  position: absolute;
+  right: 10px;
+  top: 8px;
+}
+
+/* Style untuk elemen yang unik */
+.profile-image-upload {
+  position: relative;
+  cursor: pointer;
+}
+
+.unique-profile-pic {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #ddd;
+}
+
+.profile-pic-label {
+  display: block;
+  cursor: pointer;
+}
+
+.unique-profile-input {
+  display: none;
+}
+
+/*============================Penjualan============================= */
+
+.table tbody tr {
+  height: 70px;
+}
+
+.table-s thead th {
+  border-bottom: none;
+  background-color: #dadada;
+  font-size: .8rem;
+}
+table.table-s thead th:first-child {
+  border-top-left-radius: 10px; 
+  border-bottom-left-radius: 10px ;
+}
+
+table.table-s thead th:last-child {
+  border-top-right-radius: 10px; 
+  border-bottom-right-radius: 10px;
+}
+
+table.table-s thead {
+  overflow: hidden;
+}
+
+.product-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.status-badge {
+  padding: 7px 10px;
+  border-radius: 25px;
+  font-size: 0.875rem;
+}
+
+.status-delivered {
+  background-color: #00B69B;
+  color: #ffffff;
+}
+
+.status-pending {
+  background-color: #FCBE2D;
+  color: #ffffff;
+}
+
+.status-rejected {
+  background-color: #f71225;
+  color: #ffffff;
+}
+
+
+.card-custom {
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  background-color: #fff;
+}
+.card-icon {
+  background-color: #E8EAF6;
+  border-radius: 50%;
+  display: inline-block;
+  padding: 10px;
+}
+.icon-color {
+  color: #4CAF50;
+}
+.percentage-text {
+  color: #4CAF50;
+}
+
+/* ==========================================================================*/
+
+.action-icon {
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.action-button1 {
+  border-radius: 10px 0 0 10px;
+  border: #00B69B solid 1px;
+  padding: 5px 10px;
+}
+
+.action-button2 {
+  border-radius: 0 10px 10px 0;
+  border: #00B69B solid 1px;
+  padding: 5px 10px;
+}
+
+/* From Uiverse.io by 3bdel3ziz-T */ 
+.select {
+  width: fit-content;
+  cursor: pointer;
+  position: relative;
+  transition: 300ms;
+  color: white;
+  overflow: hidden;
+}
+
+.selected {
+  background-color: #2a2f3b;
+  padding: 5px;
+  margin-bottom: 3px;
+  border-radius: 5px;
+  position: relative;
+  z-index: 100000;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.arrow {
+  position: relative;
+  right: 0px;
+  height: 10px;
+  transform: rotate(-90deg);
+  width: 25px;
+  fill: white;
+  z-index: 100000;
+  transition: 300ms;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: #2a2f3b;
+  position: relative;
+  top: -100px;
+  opacity: 0;
+  transition: 300ms;
+}
+
+.select:hover > .options {
+  opacity: 1;
+  top: 0;
+}
+
+.select:hover > .selected .arrow {
+  transform: rotate(0deg);
+}
+
+.option {
+  border-radius: 5px;
+  padding: 5px;
+  transition: 300ms;
+  background-color: #2a2f3b;
+  width: 150px;
+  font-size: 15px;
+}
+.option:hover {
+  background-color: #323741;
+}
+
+.options input[type="radio"] {
+  display: none;
+}
+
+.options label {
+  display: inline-block;
+}
+.options label::before {
+  content: attr(data-txt);
+}
+
+.options input[type="radio"]:checked + label {
+  display: none;
+}
+
+.options input[type="radio"]#all:checked + label {
+  display: none;
+}
+
+.select:has(.options input[type="radio"]#all:checked) .selected::before {
+  content: attr(data-default);
+}
+.select:has(.options input[type="radio"]#option-1:checked) .selected::before {
+  content: attr(data-one);
+}
+.select:has(.options input[type="radio"]#option-2:checked) .selected::before {
+  content: attr(data-two);
+}
+.select:has(.options input[type="radio"]#option-3:checked) .selected::before {
+  content: attr(data-three);
 }

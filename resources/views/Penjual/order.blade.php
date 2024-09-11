@@ -5,7 +5,9 @@
 <main>
     <section class="row">
         <h1 class="fw-bold fs-3 mt-2 mb-3 col-md-8">Kelola Order</h1>
+        <!---
         <div class="col-md-3 row">
+
             <h1 style="margin-top: 0.5rem;"><i class='bx bx-filter-alt fw-bold bx-sm'></i>Filter Berdasarkan:</h1>
             <div class="select" style="position: absolute; margin-top: 0.5rem; margin-left: 11rem">
                 <div class="selected" data-default="All" data-one="option-1" data-two="option-2" data-three="option-3">
@@ -34,7 +36,8 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div>-->
+
         <div class="container pb-2 mb-3">
             <table class="table align-middle">
                 <thead>
@@ -52,35 +55,35 @@
                     <tr>
                         <td>0001</td>
                         <td>
-                            <div class="d-flex align-items-center">Apple Watch </div>
+                            <div class="d-flex align-items-center">Kacang Almond </div>
                         </td>
-                        <td>6096 Marjolaine Landing</td>
-                        <td>12.09.2019 - 12.53 PM</td>
-                        <td>423</td>
-                        <td>$34,295</td>
-                        <td><span class="status-badge status-delivered">Delivered</span></td>
+                        <td>Malang, jawa Timur</td>
+                        <td>12.09.2019 - 12.53 WIB</td>
+                        <td>4</td>
+                        <td>Rp 34,295</td>
+                        <td><span class="status-badge status-delivered">Terkirim</span></td>
                     </tr>
                     <tr>
-                        <td>0001</td>
+                        <td>0011</td>
                         <td>
-                            <div class="d-flex align-items-center">Apple Watch </div>
+                            <div class="d-flex align-items-center">Kacang Almond </div>
                         </td>
-                        <td>6096 Marjolaine Landing</td>
-                        <td>12.09.2019 - 12.53 PM</td>
-                        <td>423</td>
-                        <td>$34,295</td>
-                        <td><span class="status-badge status-pending">Pending</span></td>
+                        <td>Malang, jawa Timur</td>
+                        <td>12.09.2019 - 12.53 WIB</td>
+                        <td>4</td>
+                        <td>Rp 34,295</td>
+                        <td><span class="status-badge status-pending">Mengirim</span></td>
                     </tr>
                     <tr>
-                        <td>0001</td>
+                        <td>0021</td>
                         <td>
-                            <div class="d-flex align-items-center">Apple Watch </div>
+                            <div class="d-flex align-items-center">Kacang Almond </div>
                         </td>
-                        <td>6096 Marjolaine Landing</td>
-                        <td>12.09.2019 - 12.53 PM</td>
-                        <td>423</td>
-                        <td>$34,295</td>
-                        <td><span class="status-badge status-rejected">Rejected</span></td>
+                        <td>Malang, jawa Timur</td>
+                        <td>12.09.2019 - 12.53 WIB</td>
+                        <td>4</td>
+                        <td>Rp 34,295</td>
+                        <td><span class="status-badge status-rejected">Dibatalkan</span></td>
                     </tr>
                 </tbody>
             </table>
